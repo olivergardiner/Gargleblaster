@@ -1,0 +1,4 @@
+# Gargleblaster
+Open Hardware pedal based on the Tonebender 3 knob but, like the Base13, has a true +9v supply and a buffered output.
+
+The operation of a PNP fuzz from a +9v rail can be achieved by AC coupling into an amplifier circuit that is referenced to +9v rather than ground, but this is susceptible to excess noise in the context of a pedal that is likely to be operated with a high gain - not a great scenario. In this case, a -9v rail is created using inverters (MAX1044 or ICL7660S). Given the noisy nature of fuzz circuits, it is generally important for both ground and any rails to be very clean - a 9v battery being ideal but less convenient than a 9v PSU. Accordingly, this design cascades 2 inverters to create a-ve rail of around 16v to 18v which then provides enough headroom to use a -9v regulator for the -9v rail.
