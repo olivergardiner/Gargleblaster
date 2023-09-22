@@ -15,6 +15,7 @@ desktop.ini
 # Exported images and docs
 *.bmp
 *.png
+*.jpg
 *.pdf
 
 # Production files
